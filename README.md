@@ -35,7 +35,7 @@ This is the basic layout of the website where things need to be replaced with yo
 
 - Replace 'Lorem Ipsum' with relevent description of your skills .
 - In the anchor tag, feel free to redirect the READ MORE button to a suitable website.
-- Replace the `<svg></svg>` tags with the icons related to your skill set 
+- Replace the `<svg></svg>` tags with the icons related to your skill set (For icons, checkout - https://icons8.com/)
 
 #### CONTACT
 
