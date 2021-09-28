@@ -1,7 +1,8 @@
 # Personal-Portfolio
 
 ### Website
-https://user-images.githubusercontent.com/74411873/135130081-9274eeaf-abf5-4e11-be03-677837555340.mp4
+https://user-images.githubusercontent.com/74411873/135132982-12ba031e-4a07-4148-88f2-069af65ceea4.mp4
+
 
 ### How to go about
 This is the basic layout of the website where things need to be replaced with your data and credentials, follow these easy steps given down below to get your website working: 
@@ -9,7 +10,7 @@ This is the basic layout of the website where things need to be replaced with yo
 ## HTML (index.html)
 
 - Change the Title of the Web Page to your name
-- Generate a favicon for your website from https://favicon.io
+- Go to https://favicon.io to generate favicon for your website
 - Go to https://fontawesome.com/ and get your Kit number and replace it in place of `{{YOUR KIT KEY}}`
 - Go to https://www.emailjs.com/ and sign up yourself, create Email Service and Email Template. 
 - Go to https://dashboard.emailjs.com/admin/integration/browser and get your UserID and replace it with `{{YOUR USER KEY}}`
