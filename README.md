@@ -1,4 +1,11 @@
 # Personal-Portfolio
+
+### Website
+https://user-images.githubusercontent.com/74411873/135130081-9274eeaf-abf5-4e11-be03-677837555340.mp4
+
+### How to go about
+This is the basic layout of the website where things need to be replaced with your data and credentials, follow these easy steps given down below to get your website working: 
+
 ## HTML (index.html)
 
 - Change the Title of the Web Page to your name
@@ -46,7 +53,10 @@
 ## JavaScript (script.js)
 
 - Replace `{{SERVICE ID}},{{TEMPLATE ID}}` with the unique IDs that you will get once you Sign Up
-**Service ID** - https://dashboard.emailjs.com/admin, 
-**Template ID** - https://dashboard.emailjs.com/admin/templates
+
+    **Service ID** - https://dashboard.emailjs.com/admin, 
+    **Template ID** - https://dashboard.emailjs.com/admin/templates
 
 - Replace `"Your Skill","Your Hobby","Your Passion","Your Proficiency"` with your respective things. 
+
+> **Hurray! Your personal-portfolio website is up and running, now deploy it on Github Pages and you are good to go, If you found this helpful, dont forget to ⭐ this repository and share it with others!!**
