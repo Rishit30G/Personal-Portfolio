@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+   scroll-behavior:smooth;
+}
+.favicon{
+    border-radius: 50%;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    background-size: 500px;
+    padding: 30px 0;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: #23b410;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: white;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    color: #23b410;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: white;
+}
+
+.menu-btn{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    display: flex;
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .max-width .home-content{
+    padding-top: 220px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: #25e70c;
+    font-weight: 500;
+}
+
+/* all similar styling */
+section{
+    padding: 60px 0;
+    padding-bottom: 300px;
+}
+.about, .services, .skills, .contact, footer{
+    font-family: 'Poppins',sans-serif;
+}
+.about .about-content, .services .serv-content, .skills .skills-content, .contact, .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    color: #23b410;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: green;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color: #23b410;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+/* about section styling */
+.about{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background-size: 2000px;
+}
+.about .title::after{
+    content: "Who I am";
+}
+.about .about-content .left{
+   width: 45%;
+}
+.about .about-content .left img{
+    height: 370px;
+    width: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.about .about-content .left img:hover{
+    transform: scale(1.05);
+}
+.about .about-content .right{
+    width: 55%;
+ }
+ .about .about-content .right .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .about .about-content .right .text span{
+     color: #23b410;
+ }
+ .about .about-content .right .paragraph{
+     color: white;
+     font-size: 18px;
+ }
+ .about .about-content .right .p{
+     text-align: justify;
+ }
+ .about .about-content .right a{
+    display: inline-block;
+    background: none;
+    color: #23b410;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 6px;
+    border: 2px solid #23b410;
+    transition: all 0.3s ease;
+ }
+ .about .about-content .right a:hover{
+     color: white;
+     background:none;
+ }
+ 
+ /* services styling */
+ .services{
+     color: white;
+     background:black;
+     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+     background-size: 2000px;
+ }
+ .services .title::before{
+    background: white;
+}
+ .services .title::after{
+     background: black;
+     content: "What I provide";
+ }
+ .services .serv-content .card{
+     width: calc(33% - 20px);
+     text-align:center;
+     background:none;
+     border-radius: 6px;
+     padding: 20px 25px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ .services .serv-content .card:hover {
+     background:  none;
+ }
+ .services .serv-content .card .box{
+      transition: all 0.3s ease;
+ }
+ .services .serv-content .card:hover .box{
+      transform: scale(1.05);
+}
+ .services .serv-content .card i{
+     font-size: 50px; 
+     color: #23b410;
+     transition:color 0.3s ease;
+ }
+ .services .serv-content .card:hover i{
+    color: #23b410;
+}
+ .services .serv-content .card .text{
+     font-size: 25px;
+     font-weight: 500;
+     margin: 10px 0 7px 0;
+ }
+
+/* Skills Section Styling */
+
+.skills{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background-size: 2000px;
+}
+
+.skills .title::after{
+    content: "What I Know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+   color: white;
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+.skills .skills-content .left .paragraph-2{
+    font-size: 17px;
+    color: white;
+}
+.skills .skills-content .left .p{
+    text-align: justify;
+ }
+ .skills .skills-content .left a{
+    display: inline-block;
+    background: none;
+    color: #23b410;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 6px;
+    border: 2px solid #23b410;
+    transition: all 0.3s ease;
+ }
+ .skills .skills-content .left a:hover{
+     color:white;
+ }
+ .skills .skills-content .right .icons{
+     font-size: 50px;
+     color: white;
+     display: flex;
+     margin-bottom: 5px;
+     align-items: center;
+     justify-content: space-between;
+     transition: all 0.3s ease;
+     padding-top: 20px;
+ }
+ .skills .skills-content .right .icons svg{
+    transition: all 0.3s ease;
+    color: white;
+ }
+ .skills .skills-content .right .icons svg:hover{
+    color: orange;
+    transform: scale(1.15);
+    
+ }  
+ .skills .skills-content .right .icons .fa-js-square:hover{
+    color: yellow;
+    transform: scale(1.15);
+ }
+ .skills .skills-content .right .icons .fa-css3:hover{
+    color: rgb(52, 158, 224);
+    transform: scale(1.15);
+ }
+ .skills .skills-content .right .icons .fa-react:hover{
+    color: rgb(39, 111, 245);
+    transform: scale(1.15);
+ }
+ .skills .skills-content .right .icons .fa-cuttlefish:hover{
+    color: rgb(19, 168, 5);
+    transform: scale(1.15);
+ }
+
+ 
+/* .skills .skills-content .right .bars{
+    color: white;
+ margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+} */
+/* .skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #23b410;
+}
+.skills .skills-content .right .html::before{
+   width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 80%;
+ }
+ .skills .skills-content .right .flutter::before{
+    width: 70%;
+ } */
+
+ /* contact section styling */
+ .contact{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background-size: 2000px;
+ }
+ .contact .title::after{
+     content: "Get in touch";
+ }
+
+ .contact .contact-content .column{
+     width: calc(50% - 30px);
+ }
+ .contact .contact-content .text{
+     color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;  
+}
+ .contact .contact-content .left p{
+     text-align: justify;
+ }
+ .contact .contact-content .left .paragraph-3{
+     font-size: 18px;
+     color: white;
+ }
+ .contact .contact-content .left .icons{
+     margin: 10px 0;
+ }
+ .contact .contact-content .row{
+     display: flex;
+     height: 65px;
+     align-items: center;
+ }
+ .contact .contact-content .row .info{
+     margin-left: 30px;
+ }
+ .contact .contact-content .row i{
+     font-size: 25px;
+     color: #23b410;
+ }
+ .contact .contact-content .info .head{
+     color: white;
+     font-weight: 500;
+ }
+ .contact .contact-content .info .sub-title{
+    color: white;
+}
+.contact .right form .fields{
+   display: flex;
+}
+.contact .right form .field,.contact .right form .fields .field{
+   height: 45px;
+   width: 100%;
+   margin-bottom: 15px;
+}
+
+.contact .right form .textarea{
+   height: 80px;
+   width: 100%;
+
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+.contact .right form .field input,.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border:2px solid #23b410;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+     padding-top: 10px;
+     resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 0.1px solid #23b410;
+    background: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    background: none;
+    color: #23b410;
+}
+
+/* footer styling */
+footer{
+    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    background-size: 500px;
+    padding: 20px 23px;
+    color: white;
+}
+footer .text-center {
+    text-align: center !important; }
+
+footer span a{
+    color: #23b410;
+    transition: color 0.3s ease;
+}
+footer i{
+    padding-left: 10px;
+    font-size: 25px;;
+    color: #23b410;
+    transition: color 0.3s ease;
+}
+footer span a:hover{
+    color: white;
+}
+footer i{
+    font-size: 27px;
+}
+footer i:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* response media query starts */
+@media (max-width: 1300px) {
+   .home .max-width{
+       margin-left: 0px;
+   }
+}
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+ }
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px) {
+    
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+       display: block;
+       z-index: 999;
+    }
+    .menu-btn i.active::before{
+          content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left:-100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;   
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom:35px ;
+    }
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+    .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
