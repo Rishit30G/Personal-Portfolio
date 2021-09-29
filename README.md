@@ -1,5 +1,8 @@
 # Personal-Portfolio
 
+![](https://img.shields.io/github/issues-pr/Rishit30G/Personal-Portfolio?style=for-the-badge)   ![](https://img.shields.io/github/last-commit/Rishit30G/Personal-Portfolio?style=for-the-badge)
+
+![](https://img.shields.io/github/forks/Rishit30G/Personal-Portfolio?style=for-the-badge)     ![](https://img.shields.io/github/followers/Rishit30G?style=for-the-badge)
 ### Website
 https://user-images.githubusercontent.com/74411873/135132982-12ba031e-4a07-4148-88f2-069af65ceea4.mp4
 
@@ -60,4 +63,6 @@ This is the basic layout of the website where things need to be replaced with yo
 
 - Replace `"Your Skill","Your Hobby","Your Passion","Your Proficiency"` with your respective things. 
 
-> **Hurray! Your personal-portfolio website is up and running, now deploy it on Github Pages and you are good to go, If you found this helpful, dont forget to ⭐ this repository and share it with others!!**
+## Thank You
+
+**Hurray! Your personal-portfolio website is up and running, now deploy it on Github Pages and you are good to go, If you found this helpful, dont forget to ⭐ this repository and share it with others!!**
