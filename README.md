@@ -1,8 +1,9 @@
 # Personal-Portfolio
 
-![](https://img.shields.io/github/issues-pr/Rishit30G/Personal-Portfolio?style=for-the-badge)   ![](https://img.shields.io/github/last-commit/Rishit30G/Personal-Portfolio?style=for-the-badge)
+![](https://img.shields.io/github/issues-pr/Rishit30G/Personal-Portfolio?style=for-the-badge)   ![](https://img.shields.io/github/last-commit/Rishit30G/Personal-Portfolio?style=for-the-badge) 
 
 ![](https://img.shields.io/github/forks/Rishit30G/Personal-Portfolio?style=for-the-badge)     ![](https://img.shields.io/github/followers/Rishit30G?style=for-the-badge)  ![](https://img.shields.io/github/stars/Rishit30G/Personal-Portfolio?style=for-the-badge)
+
 ### Website Layout
 https://user-images.githubusercontent.com/74411873/135132982-12ba031e-4a07-4148-88f2-069af65ceea4.mp4
 
@@ -10,7 +11,7 @@ https://user-images.githubusercontent.com/74411873/135132982-12ba031e-4a07-4148-
 ### How to go about
 This is the basic layout of the website where things need to be replaced with your data and credentials, follow these easy steps given down below to get your website working: 
 
-## HTML (index.html)
+## HTML (index.html) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
 
 - Change the Title of the Web Page to your name
 - Go to https://favicon.io to generate favicon for your website
@@ -54,7 +55,7 @@ This is the basic layout of the website where things need to be replaced with yo
 
 
 
-## JavaScript (script.js)
+## JavaScript (script.js) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 - Replace `{{SERVICE ID}},{{TEMPLATE ID}}` with the unique IDs that you will get once you Sign Up
 
@@ -67,3 +68,5 @@ This is the basic layout of the website where things need to be replaced with yo
 
 **Hurray! Your personal-portfolio website is up and running, now deploy it on Github Pages and you are good to go, 
  If you found this helpful, dont forget to ⭐ this repository and share it with others!!**
+ 
+#### Website Link: https://rishit30g.github.io/Personal-Portfolio/
