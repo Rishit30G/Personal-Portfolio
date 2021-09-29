@@ -67,6 +67,6 @@ This is the basic layout of the website where things need to be replaced with yo
 ## Thank You
 
 **Hurray! Your personal-portfolio website is up and running, now deploy it on Github Pages and you are good to go, 
- If you found this helpful, dont forget to ⭐ this repository and share it with others!!**
+ If you found this helpful, dont forget to 🌟 this repository and share it with others!!**
  
 #### Website Link: https://rishit30g.github.io/Personal-Portfolio/
