@@ -61,6 +61,8 @@ This is the basic layout of the website where things need to be replaced with yo
 
     **Service ID** - https://dashboard.emailjs.com/admin, 
     **Template ID** - https://dashboard.emailjs.com/admin/templates
+    
+ - For reference take a look at this video for setting up EmailJS - https://www.youtube.com/watch?v=x7Ewtay0Q78&ab_channel=CodewithVoran
 
 - Replace `"Your Skill","Your Hobby","Your Passion","Your Proficiency"` with your respective things. 
 
