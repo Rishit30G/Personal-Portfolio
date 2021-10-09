@@ -186,6 +186,7 @@ section .title::after{
 }
 .about .about-content .left img:hover{
     transform: scale(1.05);
+    transform: rotate(360deg);
 }
 .about .about-content .right{
     width: 55%;
