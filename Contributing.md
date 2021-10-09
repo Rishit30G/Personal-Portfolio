@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-### Learn how to create Issues, Fork a repo , make changes and ask a maintainer to review and merge
+### Learn how to Fork a repo , make changes and ask a maintainer to review and merge
 
 ## Creating a Pull Request
 If you want to contribute to other projects on Github. How do you do it?<br>
