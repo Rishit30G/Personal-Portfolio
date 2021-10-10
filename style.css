@@ -535,14 +535,7 @@ footer i:hover{
   
   .progress-bar {
     height: 4px;
-    background: rgb(35,180,16);
-  }
-
-  .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
+    background: rgb(105, 253, 86);
   }
   
   @-webkit-keyframes glow {
