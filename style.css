@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+.body{
+  background-image: "images/leaves_bushes_green_174515_3840x2400.jpg")
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+
 }
 html{
    scroll-behavior:smooth;
@@ -25,12 +29,15 @@ html{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+  /* -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); */
 }
 
 .navbar.sticky {
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
     background-size: 500px;
     padding: 30px 0;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
 .navbar .max-width {
@@ -222,7 +229,7 @@ section .title::after{
      color: white;
      background:none;
  }
- 
+
  /* services styling */
  .services{
      color: white;
@@ -256,7 +263,7 @@ section .title::after{
       transform: scale(1.05);
 }
  .services .serv-content .card i{
-     font-size: 50px; 
+     font-size: 50px;
      color: #23b410;
      transition:color 0.3s ease;
  }
@@ -329,8 +336,8 @@ section .title::after{
  .skills .skills-content .right .icons svg:hover{
     color: orange;
     transform: scale(1.15);
-    
- }  
+
+ }
  .skills .skills-content .right .icons .fa-js-square:hover{
     color: yellow;
     transform: scale(1.15);
@@ -348,7 +355,7 @@ section .title::after{
     transform: scale(1.15);
  }
 
- 
+
 /* .skills .skills-content .right .bars{
     color: white;
  margin-bottom: 15px;
@@ -403,7 +410,7 @@ section .title::after{
      color: white;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
  .contact .contact-content .left p{
      text-align: justify;
@@ -495,10 +502,14 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    /* background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg"); */
     background-size: 500px;
     padding: 20px 23px;
     color: white;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+
 }
 footer .text-center {
     text-align: center !important; }
@@ -522,43 +533,9 @@ footer i{
 footer i:hover{
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body{
+  background-image: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+}
 
 
 
@@ -580,7 +557,7 @@ footer i:hover{
     }
 }
 @media (max-width: 947px) {
-    
+
     .max-width{
         padding: 0 50px;
     }
@@ -618,7 +595,7 @@ footer i:hover{
     .home .home-content .text-2 {
         font-size: 70px;
     }
-    
+
     .home .home-content .text-3 {
         font-size: 35px;
     }
@@ -626,7 +603,7 @@ footer i:hover{
         max-width: 800px;
     }
     .about .about-content .column{
-        width: 100%;   
+        width: 100%;
     }
     .about .about-content .left{
         display: flex;
