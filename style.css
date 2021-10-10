@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* Scrool To Top Button */
+#to-top-button {
+    display: none;
+    position: fixed;
+    right:50%;
+    bottom: 50px;
+    color: white;
+    padding: 5px;
+    border-radius: 100px;
+    border: 2px solid white;
+    z-index: 10;
+}
+
+.d-initial {
+    display: initial !important;
+}
+
 * {
     margin: 0;
     padding: 0;

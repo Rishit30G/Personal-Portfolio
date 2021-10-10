@@ -17,12 +17,16 @@ function sendMail(params){
      });
 }
 
+// Scroll To Top Button
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {
             $(".navbar").addClass("sticky");
+            $("#to-top-button").addClass("d-initial")
         } else {
             $(".navbar").removeClass("sticky");
+            $("#to-top-button").removeClass("d-initial")
         }
     });
     $('.menu-btn').click(function(){
@@ -46,4 +50,3 @@ $(document).ready(function () {
         loop: true,
     });
 });
-
