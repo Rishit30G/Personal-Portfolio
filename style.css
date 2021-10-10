@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scrollbar-width: none;  
 }
 html{
    scroll-behavior:smooth;
@@ -28,7 +29,7 @@ html{
 }
 
 .navbar.sticky {
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    background: #245333;
     background-size: 500px;
     padding: 30px 0;
 }
@@ -70,10 +71,14 @@ html{
 
 .navbar .menu li a:hover {
     color: #23b410;
+    border: 1px dotted #fff;
+    padding: 10px;
+    background: #fff;
+    transition: 0.5s
 }
 
 .navbar.sticky .menu li a:hover {
-    color: white;
+    color: #23b410;
 }
 
 .menu-btn{
@@ -87,7 +92,7 @@ html{
     display: flex;
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -139,7 +144,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    color: #23b410;
+    color: #fff;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 80px;
@@ -168,8 +173,10 @@ section .title::after{
 }
 /* about section styling */
 .about{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: #000;
     background-size: 2000px;
+    background-attachment: fixed;
+    filter: drop-shadow(10px 10px 4px #000000);
 }
 .about .title::after{
     content: "Who I am";
@@ -186,6 +193,10 @@ section .title::after{
 }
 .about .about-content .left img:hover{
     transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+    transform: skew(5deg);
+    border: 2px dotted #fff;
 }
 .about .about-content .right{
     width: 55%;
@@ -245,9 +256,13 @@ section .title::after{
      padding: 20px 25px;
      cursor: pointer;
      transition: all 0.3s ease;
+     /* border: 1px solid #fff; */
+
  }
  .services .serv-content .card:hover {
      background:  none;
+     border: 1px solid #fff;
+     background: rgba(0, 250, 154, 0.151);
  }
  .services .serv-content .card .box{
       transition: all 0.3s ease;
@@ -272,7 +287,7 @@ section .title::after{
 /* Skills Section Styling */
 
 .skills{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background: #000;
     background-size: 2000px;
 }
 
@@ -311,6 +326,7 @@ section .title::after{
  }
  .skills .skills-content .left a:hover{
      color:white;
+     cursor: pointer;
  }
  .skills .skills-content .right .icons{
      font-size: 50px;
@@ -325,10 +341,11 @@ section .title::after{
  .skills .skills-content .right .icons svg{
     transition: all 0.3s ease;
     color: white;
+    cursor: pointer;
  }
  .skills .skills-content .right .icons svg:hover{
     color: orange;
-    transform: scale(1.15);
+    transform: scale(1.5);
     
  }  
  .skills .skills-content .right .icons .fa-js-square:hover{
@@ -404,6 +421,17 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;  
+    
+}
+.left{
+    background: rgba(88, 119, 95, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+.right{
+    background: rgba(88, 119, 95, 0.5);
+    padding: 20px;
+    border-radius: 5px;
 }
  .contact .contact-content .left p{
      text-align: justify;
@@ -495,12 +523,13 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    background:#000;
     background-size: 500px;
     padding: 20px 23px;
     color: white;
 }
 footer .text-center {
+    margin-top: 20px;
     text-align: center !important; }
 
 footer span a{
@@ -522,9 +551,7 @@ footer i{
 footer i:hover{
     color: white;
 }
-
-
-
+ 
 .progress-container {
     width: 100%;
     height: 4px;
@@ -535,10 +562,10 @@ footer i:hover{
   
   .progress-bar {
     height: 4px;
-    background: rgb(87,142,84);
+    background: linear-gradient(45deg,rgb(87,142,84),#FFFFFF);
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 0px rgb(154, 233, 158), 0 0 10px rgb(116, 180, 137), 0 0 20px #79dd97, 0 0 30px #60d3a7, 0 0 40px #43f091, 0 0 50px #24e4a4, 0 0 60px #00ff95;
     }
