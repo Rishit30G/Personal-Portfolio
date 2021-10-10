@@ -38,23 +38,26 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="max-width">
-      <div class="logo">
-        <a href="#">My<span> Website</span></a>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">My<span> Website</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Services</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-      <ul class="menu">
-        <li><a href="#home" class="menu-btn">Home</a></li>
-        <li><a href="#about" class="menu-btn">About</a></li>
-        <li><a href="#services" class="menu-btn">Services</a></li>
-        <li><a href="#skills" class="menu-btn">Skills</a></li>
-        <li><a href="#contact" class="menu-btn">Contact</a></li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- home section start-->
   <section class="home" id="home">
@@ -255,6 +258,17 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 </body>
 
 </html>
