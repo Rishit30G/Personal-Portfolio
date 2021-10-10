@@ -17,7 +17,7 @@ function sendMail(params){
      });
 }
 
-// Scroll To Top Button
+// Scroll To Top Button on Line 26 and 29
 
 $(document).ready(function () {
     $(window).scroll(function () {

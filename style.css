@@ -11,6 +11,7 @@
     border-radius: 100px;
     border: 2px solid white;
     z-index: 10;
+    background-color: black;
 }
 
 .d-initial {
