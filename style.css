@@ -538,7 +538,22 @@ footer i:hover{
     background: rgb(35,180,16);
   }
 
-
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(154, 233, 158), 0 0 20px rgb(116, 180, 137), 0 0 30px #79dd97, 0 0 40px #60d3a7, 0 0 50px #43f091, 0 0 60px #24e4a4, 0 0 70px #00ff95;
+    }
+    
+    to {
+      text-shadow: 0 0 20px rgb(168, 223, 171), 0 0 30px rgb(62, 172, 95), 0 0 40px #79dd97, 0 0 50px #60d3a7, 0 0 60px #43f091, 0 0 70px #24e4a4, 0 0 80px #00ff95;
+    }
+  }
 
 
 
