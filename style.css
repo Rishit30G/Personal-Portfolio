@@ -9,6 +9,11 @@
 html{
    scroll-behavior:smooth;
 }
+body{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .favicon{
     border-radius: 50%;
 }
@@ -28,7 +33,7 @@ html{
 }
 
 .navbar.sticky {
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    backdrop-filter: blur(20px);
     background-size: 500px;
     padding: 30px 0;
 }
@@ -85,9 +90,6 @@ html{
 
 .home {
     display: flex;
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -167,10 +169,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 /* about section styling */
-.about{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-    background-size: 2000px;
-}
+
 .about .title::after{
     content: "Who I am";
 }
@@ -226,9 +225,6 @@ section .title::after{
  /* services styling */
  .services{
      color: white;
-     background:black;
-     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-     background-size: 2000px;
  }
  .services .title::before{
     background: white;
@@ -270,11 +266,6 @@ section .title::after{
  }
 
 /* Skills Section Styling */
-
-.skills{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-    background-size: 2000px;
-}
 
 .skills .title::after{
     content: "What I Know";
@@ -388,10 +379,7 @@ section .title::after{
  } */
 
  /* contact section styling */
- .contact{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-    background-size: 2000px;
- }
+ 
  .contact .title::after{
      content: "Get in touch";
  }
@@ -495,8 +483,8 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
+    backdrop-filter: blur(10px);
+    min-height: 10vh;
     padding: 20px 23px;
     color: white;
 }
@@ -547,40 +535,6 @@ footer i:hover{
       text-shadow: 0 0 20px rgb(168, 223, 171), 0 0 30px rgb(62, 172, 95), 0 0 40px #79dd97, 0 0 50px #60d3a7, 0 0 60px #43f091, 0 0 70px #24e4a4, 0 0 80px #00ff95;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* response media query starts */
