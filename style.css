@@ -22,6 +22,7 @@ html{
     position: fixed;
     width: 100%;
     z-index: 999;
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -29,8 +30,8 @@ html{
 .navbar.sticky {
     background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
     background-size: 500px;
-    padding: 5px 0;
-    box-shadow: 0px 10px 50px 1px #000000a4;
+    padding: 30px 0;
+    box-shadow: 0px 10px 50px 2px #000000a4;
     
 }
 
