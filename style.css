@@ -53,21 +53,48 @@ html{
 .navbar.sticky .logo a span {
     color: white;
 }
-
+.navbar .menu ul{
+    
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+}
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
 
 .navbar .menu li a {
-    display: block;
-    color: white;
+ 
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
 }
 
+.navbar .menu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navbar .menu a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 .navbar .menu li a:hover {
     color: #23b410;
 }
