@@ -63,6 +63,9 @@ body{
     color: white;
     font-size: 35px;
     font-weight: 600;
+    animation: 1.5s forwards ease-in;
+    animation-name: nav-start;
+    opacity: 0;
 }
 
 .navbar .logo a span {
@@ -84,6 +87,17 @@ body{
 .navbar .menu li {
     list-style: none;
     display: inline-block;
+    animation: 1.5s forwards ease-in;
+    animation-name: nav-start;
+    opacity: 0;
+}
+@keyframes nav-start{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .navbar .menu li a {
@@ -139,6 +153,9 @@ body{
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
+    animation: 1.5s forwards ease-in;
+    animation-name: nav-start;
+    opacity: 0;
 }
 
 .home .max-width {
