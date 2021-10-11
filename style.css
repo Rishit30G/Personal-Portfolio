@@ -9,14 +9,22 @@
 html{
    scroll-behavior:smooth;
 }
+
+body{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .favicon{
     border-radius: 50%;
 }
-.max-width {2
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+
 
 .navbar {
     position: fixed;
@@ -524,8 +532,7 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
+    backdrop-filter:blur(5px);
     padding: 20px 23px;
     color: white;
 }
