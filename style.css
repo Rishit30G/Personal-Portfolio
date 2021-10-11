@@ -532,16 +532,17 @@ footer i:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #052d13;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    background: #124429;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    color: #25e70c;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-#btnScrollToTop:active{
+#btnScrollToTop:active, #btnScrollToTop:hover{
     background: #124429;
+    box-shadow: 0px 0px 20px black;
 }
 
 
