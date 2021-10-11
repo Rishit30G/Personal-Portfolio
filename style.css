@@ -9,6 +9,13 @@
 html{
    scroll-behavior:smooth;
 }
+
+body{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .favicon{
     border-radius: 50%;
 }
@@ -17,6 +24,7 @@ html{
     padding: 0 80px;
     margin: auto;
 }
+
 
 .navbar {
     position: fixed;
@@ -28,9 +36,21 @@ html{
 }
 
 .navbar.sticky {
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
     padding: 30px 0;
+    box-shadow: 0px 10px 50px 5px #00000038;
+}
+
+.navbar.sticky::before {
+    content: '';
+    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+    position: absolute;
+    opacity: 1;
+    top: -10px;
+    left: -10px;
+    width: 105vw;
+    height:110%;
+    z-index: -1;
+    filter: blur(1.5px);
 }
 
 .navbar .max-width {
@@ -522,11 +542,11 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
+    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
     padding: 20px 23px;
     color: white;
 }
+
 footer .text-center {
     text-align: center !important; }
 
@@ -565,13 +585,13 @@ footer i:hover{
     border: none;
     outline: none;
     cursor: pointer;
+    z-index:9999;
 }
 
 #btnScrollToTop:active, #btnScrollToTop:hover{
     background: #124429;
     box-shadow: 0px 0px 20px black;
 }
-
 
 .progress-container {
     width: 100%;
@@ -580,7 +600,7 @@ footer i:hover{
     position: absolute;
     background: transparent;
   }
-  
+
   .progress-bar {
     height: 4px;
     background: rgb(87,142,84);
@@ -595,41 +615,6 @@ footer i:hover{
       text-shadow: 0 0 20px rgb(168, 223, 171), 0 0 30px rgb(62, 172, 95), 0 0 40px #79dd97, 0 0 50px #60d3a7, 0 0 60px #43f091, 0 0 70px #24e4a4, 0 0 80px #00ff95;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* response media query starts */
 @media (max-width: 1300px) {
