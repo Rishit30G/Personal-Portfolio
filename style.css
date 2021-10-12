@@ -642,8 +642,13 @@ footer i:hover{
        display: block;
        z-index: 999;
     }
-    .menu-btn i.active::before{
-          content: "\f00d";
+    .menu-btn i.active {
+        visibility: hidden;
+    }
+    .menu-btn i.active::before {
+        visibility: visible;
+        position: absolute;
+        content: "\e5cd";
     }
     .navbar .menu{
         position: fixed;
