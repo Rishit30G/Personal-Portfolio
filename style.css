@@ -28,8 +28,10 @@ html{
 }
 
 .navbar.sticky {
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
+    /* background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
+    background-size: 500px; */
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(8px);
     padding: 30px 0;
 }
 
@@ -245,16 +247,20 @@ section .title::after{
      padding: 20px 25px;
      cursor: pointer;
      transition: all 0.3s ease;
+     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
  }
  .services .serv-content .card:hover {
-     background:  none;
+    background:  none;
+    box-shadow: 0 20px 45px #23b410;
+    transform: translateY(-20px);
  }
  .services .serv-content .card .box{
       transition: all 0.3s ease;
  }
- .services .serv-content .card:hover .box{
+ /* .services .serv-content .card:hover .box{
       transform: scale(1.05);
-}
+} */
  .services .serv-content .card i{
      font-size: 50px; 
      color: #23b410;
@@ -497,11 +503,14 @@ section .title::after{
 footer{
     background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
     background-size: 500px;
-    padding: 20px 23px;
     color: white;
 }
 footer .text-center {
-    text-align: center !important; }
+    text-align: center !important; 
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px 23px;
+}
 
 footer span a{
     color: #23b410;
@@ -550,7 +559,30 @@ footer i:hover{
 
 
 
+/***********scroll*********************/
 
+.fa-arrow-up{
+    font-size: 20px;
+}
+
+#myBtn{
+	/*display: none;*/
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	color: #fff;
+	background: #23b410;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+#myBtn:hover{
+	background: #606060;
+}
+
+/********************scroll end**********/
 
 
 
@@ -678,6 +710,18 @@ footer i:hover{
     }
     .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
         width: 100%;
+    }
+
+    .about, .services, .skills, .contact{
+        background-size: contain;
+    }
+    .about .about-content .left img {
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    section .title::after {
+        bottom: -2rem;
     }
 }
 @media (max-width: 500px) {

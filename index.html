@@ -5,16 +5,19 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Rohit Dubey</title>
 
   <!-- FAVICON -->
   <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="bootstrap.min.css">
 
    <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 
    <!-- FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script> -->
 
    <!-- TYPE JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
@@ -64,7 +67,7 @@
     <div class="max-width">
       <div class="home-content">
         <div class="text-1">Hello, my name is</div>
-        <div class="text-2">YOUR NAME</div>
+        <div class="text-2">Rohit Dubey</div>
         <div class="text-3">Im a <span class="typing"></span></div>
       </div>
     </div>
@@ -76,16 +79,16 @@
       <h2 class="title">About Me</h2>
       <div class="about-content">
         <div class="column left">
-          <img src="images/P3021961.jpg" alt="" />
+          <img src="https://media-exp1.licdn.com/dms/image/C5603AQGstHFrTOgl2g/profile-displayphoto-shrink_400_400/0/1627012436766?e=1639612800&v=beta&t=q1PIMxJmx8u3B7X85vNOx2w4LWyfVHb4uFbzgZJ5Rks" alt="myImg" />
         </div>
         <div class="column right">
           <div class="text">
-            I'm {{YOUR NAME}} and Im a <span class="typing-2"></span>
+            I'm Rohit Dubey and Im a <span class="typing-2"></span>
           </div>
           <p class="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sunt, ex ad numquam, omnis natus ab a quia architecto provident tenetur nostrum incidunt optio ullam illo accusamus aperiam distinctio cum unde nisi fugiat non. Beatae delectus similique quod tenetur corporis tempora. Itaque doloremque rerum quas et minima iste atque laborum.
           </p>
-          <a href="{{GOOGLE DRIVE LINK FOR RESUME}}">Download
+          <a href="https://drive.google.com/file/d/1xmXQWjGMTpLafxrTvgRaGu_U9vJRfCfH/view?usp=sharing">Download
             Resume</a>
         </div>
       </div>
@@ -100,7 +103,7 @@
         <div class="card">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
-            <div class="text">{{SKILL 1}}</div>
+            <div class="text">Web Development</div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus error eos suscipit culpa, impedit cum corporis dignissimos porro quae deleniti. Mollitia blanditiis, doloremque eius voluptas nam labore eligendi maiores in sed pariatur odit provident qui ad est similique iste.
             </p>
@@ -110,7 +113,7 @@
         <div class="card">
           <div class="box">
             <i class="fas fa-code"></i>
-            <div class="text">{{SKILL 2}}</div>
+            <div class="text">Web Designing</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus dolore aperiam ullam praesentium molestias ipsam recusandae sunt, exercitationem, rerum tempore voluptates quam excepturi laborum maxime fugit iure sed eius neque culpa. Eligendi nostrum fugiat rerum! Magnam molestias a aspernatur?
             </p>
@@ -120,7 +123,7 @@
         <div class="card">
           <div class="box">
             <i class="fas fa-mobile-alt"></i>
-            <div class="text">{{SKILL 3}}</div>
+            <div class="text">Digital Marketing</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quod in ea, molestiae commodi necessitatibus optio, placeat eos impedit temporibus distinctio maxime illum saepe assumenda vero culpa atque et! Magnam eos eaque error voluptatem pariatur quae. Molestiae aperiam labore enim.
             </p>
@@ -198,21 +201,21 @@
               <i class="fas fa-user"></i>
               <div class="info">
                 <div class="head">Name</div>
-                <div class="sub-title">{{YOUR NAME}}</div>
+                <div class="sub-title">Rohit Dubey</div>
               </div>
             </div>
             <div class="row">
               <i class="fas fa-map-marker-alt"></i>
               <div class="info">
                 <div class="head">Address</div>
-                <div class="sub-title">{{YOUR ADDRESS}}</div>
+                <div class="sub-title">Alwar, Rajasthan</div>
               </div>
             </div>
             <div class="row">
               <i class="fas fa-envelope"></i>
               <div class="info">
                 <div class="head">Email</div>
-                <div class="sub-title">{{YOUR EMAIL}}</div>
+                <div class="sub-title">rohitdubey1352@gmail.com</div>
               </div>
             </div>
           </div>
@@ -256,8 +259,18 @@
         </div>
       </span>
     </div>
+    <div class="scrolltop float-right">
+      <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    </div>
   </footer>
   <script src="script.js"></script>
+  <script src="scrollTo.js"></script>
+  
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
   <script>
     // When the user scrolls the page, execute myFunction 
     window.onscroll = function() {myFunction()};
@@ -268,7 +281,9 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
     }
+
     </script>
+
 </body>
 
 </html>
