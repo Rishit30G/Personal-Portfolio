@@ -374,11 +374,35 @@ section .title::after{
     color: white;
  }
  .skills .skills-content .right .icons svg:hover{
-    color: orange;
+    /* color: orange; */
     transform: scale(1.15);
-    
- }  
- .skills .skills-content .right .icons .fa-js-square:hover{
+    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+ }
+ #css-icon:hover{
+    fill: #264de4;
+ }
+ #js-icon:hover{
+    fill: #f0db4f
+}
+ #react-icon:hover{
+    fill: #61DBFB;
+ }
+ #flutter-icon:hover{
+    fill: #44d1fd;
+ }
+ #html-icon:hover{
+    fill: #e34c26;
+ }
+ #vscode-icon:hover{
+     fill: #0078d7;
+ }
+ #nodejs-icon:hover{
+     fill: #3c873a
+ }
+ #cpp-icon:hover{
+    fill: #5e97d0;
+}
+ /* .skills .skills-content .right .icons .fa-js-square:hover{
     color: yellow;
     transform: scale(1.15);
  }
@@ -393,7 +417,7 @@ section .title::after{
  .skills .skills-content .right .icons .fa-cuttlefish:hover{
     color: rgb(19, 168, 5);
     transform: scale(1.15);
- }
+ } */
 
  
 /* .skills .skills-content .right .bars{
