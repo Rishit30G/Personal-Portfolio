@@ -179,7 +179,7 @@ section .title::after{
 .about .about-content .left{
    width: 45%;
 }
-.about .about-content .left img{
+.about .about-content .left img {
     height: 370px;
     width: 370px;
     object-fit: cover;
@@ -247,20 +247,16 @@ section .title::after{
      padding: 20px 25px;
      cursor: pointer;
      transition: all 0.3s ease;
-     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
  }
  .services .serv-content .card:hover {
-    background:  none;
-    box-shadow: 0 20px 45px #23b410;
-    transform: translateY(-20px);
+     background:  none;
  }
  .services .serv-content .card .box{
       transition: all 0.3s ease;
  }
- /* .services .serv-content .card:hover .box{
+ .services .serv-content .card:hover .box{
       transform: scale(1.05);
-} */
+}
  .services .serv-content .card i{
      font-size: 50px; 
      color: #23b410;
@@ -509,7 +505,7 @@ footer .text-center {
     text-align: center !important; 
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(8px);
-    padding: 20px 23px;
+    padding: 20px 23px;    
 }
 
 footer span a{
@@ -559,30 +555,7 @@ footer i:hover{
 
 
 
-/***********scroll*********************/
 
-.fa-arrow-up{
-    font-size: 20px;
-}
-
-#myBtn{
-	/*display: none;*/
-	position: fixed;
-	bottom: 20px;
-	right: 40px;
-	z-index: 99;
-	border: none;
-	color: #fff;
-	background: #23b410;
-	padding: 10px;
-	border-radius: 50%;
-}
-
-#myBtn:hover{
-	background: #606060;
-}
-
-/********************scroll end**********/
 
 
 
@@ -711,17 +684,11 @@ footer i:hover{
     .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
         width: 100%;
     }
-
-    .about, .services, .skills, .contact{
-        background-size: contain;
+    .about .about-content .left img{
+        padding: 0 2rem;
     }
-    .about .about-content .left img {
-        width: 95%;
-        height: auto;
-        margin: auto;
-    }
-    section .title::after {
-        bottom: -2rem;
+    .services .title::after {
+        bottom: -35px;
     }
 }
 @media (max-width: 500px) {
