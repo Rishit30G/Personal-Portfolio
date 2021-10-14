@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
     margin: 0;
@@ -6,17 +6,17 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
-   scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.favicon{
+.favicon {
     border-radius: 50%;
 }
 .max-width {
@@ -25,13 +25,12 @@ body{
     margin: auto;
 }
 
-
 .navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -41,16 +40,18 @@ body{
 }
 
 .navbar.sticky::before {
-    content: '';
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+    content: "";
+    /* background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg"); */
     position: absolute;
+    background-color: #0a2417;
+    border-bottom: 2px solid white;
     opacity: 1;
     top: -10px;
     left: -10px;
     width: 105vw;
-    height:110%;
+    height: 110%;
     z-index: -1;
-    filter: blur(1.5px);
+    /* filter: blur(1.5px); */
 }
 
 .navbar .max-width {
@@ -73,12 +74,11 @@ body{
 .navbar.sticky .logo a span {
     color: white;
 }
-.navbar .menu ul{
-    
-    padding: 0; 
-    list-style: none; 
+.navbar .menu ul {
+    padding: 0;
+    list-style: none;
     display: table;
-    width: 600px;
+    width: 500px;
     text-align: center;
 }
 .navbar .menu li {
@@ -87,9 +87,8 @@ body{
 }
 
 .navbar .menu li a {
- 
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 400;
     margin-left: 25px;
     transition: color 0.3s;
     color: #fff;
@@ -97,9 +96,11 @@ body{
     display: inline-block;
     padding: 15px 20px;
     position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.navbar .menu a:after {    
+.navbar .menu a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -110,11 +111,11 @@ body{
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-  }
-  .navbar .menu a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+}
+.navbar .menu a:hover:after {
+    width: 100%;
+    left: 0;
+}
 .navbar .menu li a:hover {
     color: #23b410;
 }
@@ -123,7 +124,7 @@ body{
     color: white;
 }
 
-.menu-btn{
+.menu-btn {
     color: white;
     font-size: 30px;
     cursor: pointer;
@@ -138,14 +139,14 @@ body{
     height: 100vh;
     color: white;
     min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .home .max-width {
     margin: auto 0 auto 40px;
 }
 
-.home .max-width .home-content{
+.home .max-width .home-content {
     padding-top: 220px;
 }
 
@@ -170,20 +171,28 @@ body{
 }
 
 /* all similar styling */
-section{
+section {
     padding: 120px 0;
     padding-bottom: 300px;
 }
-.about, .services, .skills, .contact, footer{
-    font-family: 'Poppins',sans-serif;
+.about,
+.services,
+.skills,
+.contact,
+footer {
+    font-family: "Poppins", sans-serif;
 }
-.about .about-content, .services .serv-content, .skills .skills-content, .contact, .contact-content{
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact,
+.contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-section .title{
+section .title {
     position: relative;
     text-align: center;
     color: #23b410;
@@ -191,9 +200,9 @@ section .title{
     font-weight: 500;
     margin-bottom: 80px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
-section .title::before{
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -203,7 +212,7 @@ section .title::before{
     background: green;
     transform: translateX(-50%);
 }
-section .title::after{
+section .title::after {
     position: absolute;
     bottom: -14px;
     left: 50%;
@@ -214,46 +223,46 @@ section .title::after{
     transform: translateX(-50%);
 }
 /* about section styling */
-.about{
+.about {
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
 }
-.about .title::after{
+.about .title::after {
     content: "Who I am";
 }
-.about .about-content .left{
-   width: 45%;
+.about .about-content .left {
+    width: 45%;
 }
-.about .about-content .left img{
+.about .about-content .left img {
     height: 370px;
     width: 370px;
     object-fit: cover;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-.about .about-content .left img:hover{
+.about .about-content .left img:hover {
     transform: scale(1.05);
 }
-.about .about-content .right{
+.about .about-content .right {
     width: 55%;
- }
- .about .about-content .right .text{
+}
+.about .about-content .right .text {
     color: white;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
- }
- .about .about-content .right .text span{
-     color: #23b410;
- }
- .about .about-content .right .paragraph{
-     color: white;
-     font-size: 18px;
- }
- .about .about-content .right .p{
-     text-align: justify;
- }
- .about .about-content .right a{
+}
+.about .about-content .right .text span {
+    color: #23b410;
+}
+.about .about-content .right .paragraph {
+    color: white;
+    font-size: 18px;
+}
+.about .about-content .right .p {
+    text-align: justify;
+}
+.about .about-content .right a {
     display: inline-block;
     background: none;
     color: #23b410;
@@ -264,87 +273,87 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid #23b410;
     transition: all 0.3s ease;
- }
- .about .about-content .right a:hover{
-     color: white;
-     background:none;
- }
- 
- /* services styling */
- .services{
-     color: white;
-     background:black;
-     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-     background-size: 2000px;
- }
- .services .title::before{
+}
+.about .about-content .right a:hover {
+    color: white;
+    background: none;
+}
+
+/* services styling */
+.services {
+    color: white;
+    background: black;
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+    background-size: 2000px;
+}
+.services .title::before {
     background: white;
 }
- .services .title::after{
-     background: black;
-     content: "What I provide";
- }
- .services .serv-content .card{
-     width: calc(33% - 20px);
-     text-align:center;
-     background:none;
-     border-radius: 6px;
-     padding: 20px 25px;
-     cursor: pointer;
-     transition: all 0.3s ease;
- }
- .services .serv-content .card:hover {
-     background:  none;
- }
- .services .serv-content .card .box{
-      transition: all 0.3s ease;
- }
- .services .serv-content .card:hover .box{
-      transform: scale(1.05);
+.services .title::after {
+    background: black;
+    content: "What I provide";
 }
- .services .serv-content .card i{
-     font-size: 50px; 
-     color: #23b410;
-     transition:color 0.3s ease;
- }
- .services .serv-content .card:hover i{
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    text-align: center;
+    background: none;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+    background: none;
+}
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #23b410;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
     color: #23b410;
 }
- .services .serv-content .card .text{
-     font-size: 25px;
-     font-weight: 500;
-     margin: 10px 0 7px 0;
- }
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 
 /* Skills Section Styling */
 
-.skills{
+.skills {
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
 }
 
-.skills .title::after{
+.skills .title::after {
     content: "What I Know";
 }
 
-.skills .skills-content .column{
+.skills .skills-content .column {
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text{
-   color: white;
-   font-size: 25px;
-   font-weight: 600;
-   margin-bottom: 10px;
+.skills .skills-content .left .text {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
-.skills .skills-content .left .paragraph-2{
+.skills .skills-content .left .paragraph-2 {
     font-size: 17px;
     color: white;
 }
-.skills .skills-content .left .p{
+.skills .skills-content .left .p {
     text-align: justify;
- }
- .skills .skills-content .left a{
+}
+.skills .skills-content .left a {
     display: inline-block;
     background: none;
     color: #23b410;
@@ -355,47 +364,45 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid #23b410;
     transition: all 0.3s ease;
- }
- .skills .skills-content .left a:hover{
-     color:white;
- }
- .skills .skills-content .right .icons{
-     font-size: 50px;
-     color: white;
-     display: flex;
-     margin-bottom: 5px;
-     align-items: center;
-     justify-content: space-between;
-     transition: all 0.3s ease;
-     padding-top: 20px;
- }
- .skills .skills-content .right .icons svg{
+}
+.skills .skills-content .left a:hover {
+    color: white;
+}
+.skills .skills-content .right .icons {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    padding-top: 20px;
+}
+.skills .skills-content .right .icons svg {
     transition: all 0.3s ease;
     color: white;
- }
- .skills .skills-content .right .icons svg:hover{
+}
+.skills .skills-content .right .icons svg:hover {
     color: orange;
     transform: scale(1.15);
-    
- }  
- .skills .skills-content .right .icons .fa-js-square:hover{
+}
+.skills .skills-content .right .icons .fa-js-square:hover {
     color: yellow;
     transform: scale(1.15);
- }
- .skills .skills-content .right .icons .fa-css3:hover{
+}
+.skills .skills-content .right .icons .fa-css3:hover {
     color: rgb(52, 158, 224);
     transform: scale(1.15);
- }
- .skills .skills-content .right .icons .fa-react:hover{
+}
+.skills .skills-content .right .icons .fa-react:hover {
     color: rgb(39, 111, 245);
     transform: scale(1.15);
- }
- .skills .skills-content .right .icons .fa-cuttlefish:hover{
+}
+.skills .skills-content .right .icons .fa-cuttlefish:hover {
     color: rgb(19, 168, 5);
     transform: scale(1.15);
- }
+}
 
- 
 /* .skills .skills-content .right .bars{
     color: white;
  margin-bottom: 15px;
@@ -434,97 +441,98 @@ section .title::after{
     width: 70%;
  } */
 
- /* contact section styling */
- .contact{
+/* contact section styling */
+.contact {
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
- }
- .contact .title::after{
-     content: "Get in touch";
- }
+}
+.contact .title::after {
+    content: "Get in touch";
+}
 
- .contact .contact-content .column{
-     width: calc(50% - 30px);
- }
- .contact .contact-content .text{
-     color: white;
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+    color: white;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
- .contact .contact-content .left p{
-     text-align: justify;
- }
- .contact .contact-content .left .paragraph-3{
-     font-size: 18px;
-     color: white;
- }
- .contact .contact-content .left .icons{
-     margin: 10px 0;
- }
- .contact .contact-content .row{
-     display: flex;
-     height: 65px;
-     align-items: center;
- }
- .contact .contact-content .row .info{
-     margin-left: 30px;
- }
- .contact .contact-content .row i{
-     font-size: 25px;
-     color: #23b410;
- }
- .contact .contact-content .info .head{
-     color: white;
-     font-weight: 500;
- }
- .contact .contact-content .info .sub-title{
+.contact .contact-content .left p {
+    text-align: justify;
+}
+.contact .contact-content .left .paragraph-3 {
+    font-size: 18px;
     color: white;
 }
-.contact .right form .fields{
-   display: flex;
+.contact .contact-content .left .icons {
+    margin: 10px 0;
 }
-.contact .right form .field,.contact .right form .fields .field{
-   height: 45px;
-   width: 100%;
-   margin-bottom: 15px;
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: #23b410;
+}
+.contact .contact-content .info .head {
+    color: white;
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+    color: white;
+}
+.contact .right form .fields {
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-.contact .right form .textarea{
-   height: 80px;
-   width: 100%;
-
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
 }
-.contact .right form .name{
+.contact .right form .name {
     margin-right: 10px;
 }
 
-.contact .right form .email{
+.contact .right form .email {
     margin-left: 10px;
 }
 
-.contact .right form .field input,.contact .right form .textarea textarea{
+.contact .right form .field input,
+.contact .right form .textarea textarea {
     height: 100%;
     width: 100%;
-    border:2px solid #23b410;
+    border: 2px solid #23b410;
     color: white;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
     background: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.contact .right form .textarea textarea{
-     padding-top: 10px;
-     resize: none;
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
 }
-.contact .right form .button{
+.contact .right form .button {
     height: 47px;
     width: 170px;
 }
 
-.contact .right form .button button{
+.contact .right form .button button {
     width: 100%;
     height: 100%;
     border: 0.1px solid #23b410;
@@ -535,44 +543,60 @@ section .title::after{
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-.contact .right form .button button:hover{
+.contact .right form .button button:hover {
     background: none;
     color: #23b410;
 }
 
 /* footer styling */
-footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+footer {
+    /* background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg"); */
+    background-color: #0a2417;
     padding: 20px 23px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid white;
 }
 
 footer .text-center {
-    text-align: center !important; }
+    text-align: center !important;
+}
 
-footer span a{
+footer span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer span a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: #23b410;
     transition: color 0.3s ease;
+    padding: 4px;
 }
-footer i{
+footer i {
     padding-left: 10px;
-    font-size: 25px;;
+    font-size: 25px;
     color: #23b410;
     transition: color 0.3s ease;
 }
-footer span a:hover{
+footer span a:hover {
     color: white;
 }
-footer i{
+footer i {
     font-size: 27px;
 }
-footer i:hover{
+footer i:hover {
     color: white;
 }
 
 /* CSS for scroll to top button */
 
-#btnScrollToTop{
+#btnScrollToTop {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -580,15 +604,16 @@ footer i:hover{
     height: 50px;
     border-radius: 50%;
     background: #124429;
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #25e70c;
-    border: none;
+    border: 1px solid white;
     outline: none;
     cursor: pointer;
-    z-index:9999;
+    z-index: 9999;
 }
 
-#btnScrollToTop:active, #btnScrollToTop:hover{
+#btnScrollToTop:active,
+#btnScrollToTop:hover {
     background: #124429;
     box-shadow: 0px 0px 20px black;
 }
@@ -599,48 +624,49 @@ footer i:hover{
     top: 0;
     position: absolute;
     background: transparent;
-  }
+}
 
-  .progress-bar {
+.progress-bar {
     height: 4px;
-    background: rgb(87,142,84);
-  }
-  
-  @-webkit-keyframes glow {
+    background: rgb(87, 142, 84);
+}
+
+@-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 0px rgb(154, 233, 158), 0 0 10px rgb(116, 180, 137), 0 0 20px #79dd97, 0 0 30px #60d3a7, 0 0 40px #43f091, 0 0 50px #24e4a4, 0 0 60px #00ff95;
+        text-shadow: 0 0 0px rgb(154, 233, 158), 0 0 10px rgb(116, 180, 137), 0 0 20px #79dd97, 0 0 30px #60d3a7,
+            0 0 40px #43f091, 0 0 50px #24e4a4, 0 0 60px #00ff95;
     }
-    
+
     to {
-      text-shadow: 0 0 20px rgb(168, 223, 171), 0 0 30px rgb(62, 172, 95), 0 0 40px #79dd97, 0 0 50px #60d3a7, 0 0 60px #43f091, 0 0 70px #24e4a4, 0 0 80px #00ff95;
+        text-shadow: 0 0 20px rgb(168, 223, 171), 0 0 30px rgb(62, 172, 95), 0 0 40px #79dd97, 0 0 50px #60d3a7,
+            0 0 60px #43f091, 0 0 70px #24e4a4, 0 0 80px #00ff95;
     }
-  }
+}
 
 /* response media query starts */
 @media (max-width: 1300px) {
-   .home .max-width{
-       margin-left: 0px;
-   }
+    .home .max-width {
+        margin-left: 0px;
+    }
 }
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
- }
+}
 @media (max-width: 991px) {
-    .max-width{
+    .max-width {
         padding: 0 50px;
     }
 }
 @media (max-width: 947px) {
-    
-    .max-width{
+    .max-width {
         padding: 0 50px;
     }
-    .menu-btn{
-       display: block;
-       z-index: 999;
+    .menu-btn {
+        display: block;
+        z-index: 999;
     }
     .menu-btn i.active {
         visibility: hidden;
@@ -650,11 +676,11 @@ footer i:hover{
         position: absolute;
         content: "\e5cd";
     }
-    .navbar .menu{
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
-        left:-100%;
+        left: -100%;
         top: 0;
         background: black;
         text-align: center;
@@ -662,13 +688,13 @@ footer i:hover{
         transition: all 0.3s ease;
     }
 
-    .navbar .menu.active{
+    .navbar .menu.active {
         left: 0;
     }
-    .navbar .menu li{
+    .navbar .menu li {
         display: block;
     }
-    .navbar .menu li a{
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -677,35 +703,35 @@ footer i:hover{
     .home .home-content .text-2 {
         font-size: 70px;
     }
-    
+
     .home .home-content .text-3 {
         font-size: 35px;
     }
-    .max-width{
+    .max-width {
         max-width: 800px;
     }
-    .about .about-content .column{
-        width: 100%;   
+    .about .about-content .column {
+        width: 100%;
     }
-    .about .about-content .left{
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card{
+    .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column {
         width: 100%;
-        margin-bottom:35px ;
+        margin-bottom: 35px;
     }
 }
 @media (max-width: 690px) {
-    .max-width{
+    .max-width {
         padding: 0 23px;
     }
     .home .home-content .text-2 {
@@ -714,7 +740,9 @@ footer i:hover{
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
+    .services .serv-content .card,
+    .skills .skills-content .column,
+    .contact .contact-content .column {
         width: 100%;
     }
 }
