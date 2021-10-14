@@ -368,58 +368,17 @@ section .title::after{
      justify-content: space-between;
      transition: all 0.3s ease;
      padding-top: 20px;
-     
  }
- .skills .skills-content .right .icons img{
+ .skills .skills-content .right .icons svg{
     transition: all 0.3s ease;
     color: white;
  }
- .skills .skills-content .right .icons img:hover{
-    transform: scale(1.20);
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px #fff; */
- }
- #css-icon:hover{
-    /* box-shadow: 0 0 20px 5px #264de4; */
-    -webkit-filter: drop-shadow(0 0 10px #264de4);
-    filter: drop-shadow(0 0 10px #264de4);
- }
- #js-icon:hover{
-    /* box-shadow: 0 0 20px 5px #f0db4f */
-    -webkit-filter: drop-shadow(0 0 10px #f0db4f);
-    filter: drop-shadow(0 0 10px #f0db4f);
-}
- #react-icon:hover{
-    /* box-shadow: 0 0 20px 5px #61DBFB; */
-    -webkit-filter: drop-shadow(0 0 10px #61DBFB);
-    filter: drop-shadow(0 0 10px #61DBFB);
- }
- #flutter-icon:hover{
-    /* box-shadow: 0 0 20px 5px #44d1fd; */
-    -webkit-filter: drop-shadow(0 0 10px #44d1fd);
-    filter: drop-shadow(0 0 10px #44d1fd);
- }
- #html-icon:hover{
-    /* box-shadow: 0 0 20px 5px #e34c26; */
-    -webkit-filter: drop-shadow(0 0 10px #e34c26);
-    filter: drop-shadow(0 0 10px #e34c26);
- }
- #vscode-icon:hover{
-     /* box-shadow: 0 0 20px 5px #0078d7; */
-     -webkit-filter: drop-shadow(0 0 10px #0078d7);
-    filter: drop-shadow(0 0 10px #0078d7);
- }
- #nodejs-icon:hover{
-     /* box-shadow: 0 0 20px 5px #3c873a; */
-     -webkit-filter: drop-shadow(0 0 10px #3c873a);
-    filter: drop-shadow(0 0 10px #3c873a);
- }
- #cpp-icon:hover{
-    /* box-shadow: 0 0 20px 5px #0080ff; */
-    -webkit-filter: drop-shadow(0 0 10px #0080ff);
-    filter: drop-shadow(0 0 10px #0080ff);
-}
- /* .skills .skills-content .right .icons .fa-js-square:hover{
+ .skills .skills-content .right .icons svg:hover{
+    color: orange;
+    transform: scale(1.15);
+    
+ }  
+ .skills .skills-content .right .icons .fa-js-square:hover{
     color: yellow;
     transform: scale(1.15);
  }
@@ -434,7 +393,7 @@ section .title::after{
  .skills .skills-content .right .icons .fa-cuttlefish:hover{
     color: rgb(19, 168, 5);
     transform: scale(1.15);
- } */
+ }
 
  
 /* .skills .skills-content .right .bars{
