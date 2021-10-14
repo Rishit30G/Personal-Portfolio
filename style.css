@@ -368,39 +368,43 @@ section .title::after{
      justify-content: space-between;
      transition: all 0.3s ease;
      padding-top: 20px;
+     
  }
- .skills .skills-content .right .icons svg{
+ .skills .skills-content .right .icons img{
     transition: all 0.3s ease;
     color: white;
  }
- .skills .skills-content .right .icons svg:hover{
-    /* color: orange; */
-    transform: scale(1.15);
-    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+ .skills .skills-content .right .icons img:hover{
+    transform: scale(1.20);
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #fff; */
+ }
+ #nodejs-icon{
+     font-size: 10px !important;
  }
  #css-icon:hover{
-    fill: #264de4;
+    box-shadow: 0 0 20px 5px #264de4;
  }
  #js-icon:hover{
-    fill: #f0db4f
+    box-shadow: 0 0 20px 5px #f0db4f
 }
  #react-icon:hover{
-    fill: #61DBFB;
+    box-shadow: 0 0 20px 5px #61DBFB;
  }
  #flutter-icon:hover{
-    fill: #44d1fd;
+    box-shadow: 0 0 20px 5px #44d1fd;
  }
  #html-icon:hover{
-    fill: #e34c26;
+    box-shadow: 0 0 20px 5px #e34c26;
  }
  #vscode-icon:hover{
-     fill: #0078d7;
+     box-shadow: 0 0 20px 5px #0078d7;
  }
  #nodejs-icon:hover{
-     fill: #3c873a
+     box-shadow: 0 0 20px 5px #3c873a
  }
  #cpp-icon:hover{
-    fill: #5e97d0;
+    box-shadow: 0 0 20px 5px #0080ff;
 }
  /* .skills .skills-content .right .icons .fa-js-square:hover{
     color: yellow;
