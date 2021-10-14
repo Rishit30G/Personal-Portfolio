@@ -171,7 +171,7 @@ body{
 
 /* all similar styling */
 section{
-    padding: 60px 0;
+    padding: 120px 0;
     padding-bottom: 300px;
 }
 .about, .services, .skills, .contact, footer{
