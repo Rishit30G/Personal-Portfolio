@@ -9,6 +9,13 @@
 html{
    scroll-behavior:smooth;
 }
+
+body{
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .favicon{
     border-radius: 50%;
 }
@@ -17,6 +24,7 @@ html{
     padding: 0 80px;
     margin: auto;
 }
+
 
 .navbar {
     position: fixed;
@@ -28,9 +36,21 @@ html{
 }
 
 .navbar.sticky {
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
     padding: 30px 0;
+    box-shadow: 0px 10px 50px 5px #00000038;
+}
+
+.navbar.sticky::before {
+    content: '';
+    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+    position: absolute;
+    opacity: 1;
+    top: -10px;
+    left: -10px;
+    width: 105vw;
+    height:110%;
+    z-index: -1;
+    filter: blur(1.5px);
 }
 
 .navbar .max-width {
@@ -53,21 +73,48 @@ html{
 .navbar.sticky .logo a span {
     color: white;
 }
-
+.navbar .menu ul{
+    
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+}
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
 
 .navbar .menu li a {
-    display: block;
-    color: white;
+ 
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
 }
 
+.navbar .menu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navbar .menu a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 .navbar .menu li a:hover {
     color: #23b410;
 }
@@ -124,7 +171,7 @@ html{
 
 /* all similar styling */
 section{
-    padding: 60px 0;
+    padding: 120px 0;
     padding-bottom: 300px;
 }
 .about, .services, .skills, .contact, footer{
@@ -495,11 +542,11 @@ section .title::after{
 
 /* footer styling */
 footer{
-    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg");
-    background-size: 500px;
+    background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
     padding: 20px 23px;
     color: white;
 }
+
 footer .text-center {
     text-align: center !important; }
 
@@ -523,7 +570,28 @@ footer i:hover{
     color: white;
 }
 
+/* CSS for scroll to top button */
 
+#btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #124429;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    color: #25e70c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index:9999;
+}
+
+#btnScrollToTop:active, #btnScrollToTop:hover{
+    background: #124429;
+    box-shadow: 0px 0px 20px black;
+}
 
 .progress-container {
     width: 100%;
@@ -532,7 +600,7 @@ footer i:hover{
     position: absolute;
     background: transparent;
   }
-  
+
   .progress-bar {
     height: 4px;
     background: rgb(87,142,84);
@@ -547,6 +615,7 @@ footer i:hover{
       text-shadow: 0 0 20px rgb(168, 223, 171), 0 0 30px rgb(62, 172, 95), 0 0 40px #79dd97, 0 0 50px #60d3a7, 0 0 60px #43f091, 0 0 70px #24e4a4, 0 0 80px #00ff95;
     }
   }
+
 
   ::-webkit-scrollbar {
     width: 5px;
@@ -566,39 +635,6 @@ footer i:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(87,142,84); 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* response media query starts */
 @media (max-width: 1300px) {
@@ -626,8 +662,13 @@ footer i:hover{
        display: block;
        z-index: 999;
     }
-    .menu-btn i.active::before{
-          content: "\f00d";
+    .menu-btn i.active {
+        visibility: hidden;
+    }
+    .menu-btn i.active::before {
+        visibility: visible;
+        position: absolute;
+        content: "\e5cd";
     }
     .navbar .menu{
         position: fixed;
