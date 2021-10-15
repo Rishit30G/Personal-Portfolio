@@ -616,6 +616,26 @@ footer i:hover{
     }
   }
 
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(87,142,84); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(87,142,84); 
+  }
+
 /* response media query starts */
 @media (max-width: 1300px) {
    .home .max-width{
