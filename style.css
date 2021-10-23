@@ -16,6 +16,13 @@ body{
     background-attachment: fixed;
 }
 
+/* adds contrast between background image and text */
+.backdrop {
+    background-color: rgba(14, 25, 15, 0.537);
+    height: inherit;
+    width: 100vw;
+}
+
 .favicon{
     border-radius: 50%;
 }
@@ -215,9 +222,14 @@ section .title::after{
 }
 /* about section styling */
 .about{
-    background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-    background-size: 2000px;
+    background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
+    background-size: cover;
 }
+
+.about .max-width {
+    padding: 20px 0px; 
+}
+
 .about .title::after{
     content: "Who I am";
 }
@@ -274,9 +286,14 @@ section .title::after{
  .services{
      color: white;
      background:black;
-     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+     background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat;
      background-size: 2000px;
  }
+
+ .services .max-width {
+    padding: 50px 0px; /* adds padding to the top and bottom of Services section */
+ }
+
  .services .title::before{
     background: white;
 }
@@ -321,6 +338,10 @@ section .title::after{
 .skills{
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
+}
+
+.skills .max-width {
+    padding: 20px 0px; /*adds padding to skills section*/
 }
 
 .skills .title::after{
@@ -454,6 +475,11 @@ section .title::after{
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
  }
+
+ .contact .backdrop {
+     padding: 20px 0px; /*adds padding to contact section*/
+ }
+
  .contact .title::after{
      content: "Get in touch";
  }
