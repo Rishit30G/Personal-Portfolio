@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("./fonts/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d") format("woff2"),
+  url("./fonts/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("woff");
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -620,6 +625,32 @@ footer i:hover{
     height: 4px;
     background: rgb(87,142,84);
   }
+
+  #icons {
+      padding-left: 8%;
+      margin-top: -7%;
+      padding-bottom: 10%;
+      padding-top: 1%;
+  }
+
+  
+
+
+#icons a{
+    color:black;
+    padding: 0.5rem;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 8px;
+}
+
+#icons a:hover{
+    color: white;
+    background-color:#25e70c;
+    transition: 0.4s;
+    
+}
   
   @-webkit-keyframes glow {
     from {
@@ -656,17 +687,44 @@ footer i:hover{
    .home .max-width{
        margin-left: 0px;
    }
+
+   
+   #icons{
+    padding-left: 5%;
+    margin-top: -45%;
+ 
+   display: flex;
+    
+}
 }
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
+
+     
+   #icons{
+    padding-left: -5%;
+    margin-top: -56%;
+ 
+   display: flex;
+    
+}
  }
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
+
+     
+   #icons{
+    padding-left: -5%;
+    margin-top: -56%;
+ 
+   display: flex;
+    
+}
 }
 @media (max-width: 947px) {
     
@@ -738,7 +796,18 @@ footer i:hover{
         width: 100%;
         margin-bottom:35px ;
     }
-}
+
+     
+   #icons{
+    padding-left: -5%;
+    margin-top: -82%;
+ 
+   display: flex;
+
+
+       
+    }
+
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -752,6 +821,7 @@ footer i:hover{
     .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
         width: 100%;
     }
+
 }
 @media (max-width: 500px) {
     .home .home-content .text-2 {
@@ -760,4 +830,29 @@ footer i:hover{
     .home .home-content .text-3 {
         font-size: 27px;
     }
+
+    #icons{
+        margin-top: -63%;
+        padding-bottom: 10%;
+    }
+   
+    
+}
+@media (min-width:374px) and (max-width: 413px) {
+    
+    #icons{
+        margin-top: -53%;
+        padding-bottom: 15%;
+    }
+   
+    
+}
+@media (min-width:0px) and (max-width: 375px) {
+    
+    #icons{
+        margin-top: -83%;
+        padding-bottom: 15%;
+    }
+   
+    
 }
