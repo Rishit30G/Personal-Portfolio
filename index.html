@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name</title>
 
-  <!--AOS Animation Link  -->
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  
+
   <!-- FAVICON -->
   <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
 
@@ -83,12 +83,12 @@
   <!-- about section -->
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="title" data-aos="fade-down">About Me</h2>
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
       <div class="about-content">
-        <div class="column left" data-aos="fade-right">
+        <div class="column left" data-aos="fade-right" >
           <img src="images/P3021961.jpg" alt="" />
         </div>
-        <div class="column right" data-aos="fade-left">
+        <div class="column right" data-aos="fade-up">
           <div class="text">
             I'm {{YOUR NAME}} and Im a <span class="typing-2"></span>
           </div>
@@ -143,7 +143,7 @@
   <!-- skills section services -->
   <section class="skills" id="skills">
     <div class="max-width" data-aos="fade-down">
-      <h2 class="title">My Skills</h2>
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
       <div class="skills-content">
         <div class="column left">
           <div class="text">
@@ -154,18 +154,18 @@
           </p>
           <a href="#about">Read More</a>
         </div>
-       <div class="column right skill-box">
+        <div class="column right skill-box">
           <div class="icons">
-            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon"  data-aos="flip-left">
-            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon"  data-aos="flip-left">
-            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon"  data-aos="flip-left">
-            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon"  data-aos="flip-left">
+            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
           </div>
           <div class="icons">
-            <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon"  data-aos="flip-left">
-            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon"  data-aos="flip-left">
-            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon"  data-aos="flip-left">
-            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon"  data-aos="flip-left">
+            <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
       </div>
   </section>
 
@@ -255,7 +255,7 @@
     }
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init({delay: 100,duration: 300,offset:100});</script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
 </body>
 
 </html>
