@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name</title>
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- FAVICON -->
   <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
 
@@ -70,7 +73,7 @@
   <section class="home" id="home">
     <div class="max-width">
       <div class="home-content">
-        <div class="text-1">Hello, my name is</div>
+        <div class="text-1" data-aos="fade-up">Hello, my name is</div>
         <div class="text-2">YOUR NAME</div>
         <div class="text-3">Im a <span class="typing"></span></div>
       </div>
@@ -80,12 +83,12 @@
   <!-- about section -->
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="title">About Me</h2>
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
       <div class="about-content">
-        <div class="column left">
+        <div class="column left" data-aos="fade-right" >
           <img src="images/P3021961.jpg" alt="" />
         </div>
-        <div class="column right">
+        <div class="column right" data-aos="fade-up">
           <div class="text">
             I'm {{YOUR NAME}} and Im a <span class="typing-2"></span>
           </div>
@@ -102,9 +105,9 @@
   <!-- Services Section -->
   <section class="services" id="services">
     <div class="max-width">
-      <h2 class="title">My Services</h2>
+      <h2 class="title" data-aos="fade-down">My Services</h2>
       <div class="serv-content">
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
             <div class="text">{{SKILL 1}}</div>
@@ -114,7 +117,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-code"></i>
             <div class="text">{{SKILL 2}}</div>
@@ -124,7 +127,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-mobile-alt"></i>
             <div class="text">{{SKILL 3}}</div>
@@ -139,8 +142,8 @@
 
   <!-- skills section services -->
   <section class="skills" id="skills">
-    <div class="max-width">
-      <h2 class="title">My Skills</h2>
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
       <div class="skills-content">
         <div class="column left">
           <div class="text">
@@ -153,25 +156,25 @@
         </div>
         <div class="column right skill-box">
           <div class="icons">
-            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon">
-            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon">
-            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon">
-            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon">
+            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
           </div>
           <div class="icons">
-            <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon">
-            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon">
-            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon">
-            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon">
+            <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
       </div>
   </section>
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="max-width">
-      <h2 class="title">Contact Me</h2>
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
       <div class="contact-content">
-        <div class="column left">
+        <div class="column left" data-aos="flip-left">
           <div class="text">Let's Get in Touch</div>
           <p class="paragraph-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium autem voluptas fugit voluptatibus deleniti quia culpa commodi, ipsum nulla modi.
           </p>
@@ -199,7 +202,7 @@
             </div>
           </div>
         </div>
-        <div class="column right">
+        <div class="column right" data-aos="flip-right">
           <div class="text">
             Message Me
           </div>
@@ -251,6 +254,8 @@
       document.getElementById("myBar").style.width = scrolled + "%";
     }
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
 </body>
 
 </html>
