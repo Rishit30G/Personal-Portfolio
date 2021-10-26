@@ -623,7 +623,7 @@ footer i:hover{
     background: rgb(87,142,84);
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 0px rgb(154, 233, 158), 0 0 10px rgb(116, 180, 137), 0 0 20px #79dd97, 0 0 30px #60d3a7, 0 0 40px #43f091, 0 0 50px #24e4a4, 0 0 60px #00ff95;
     }
