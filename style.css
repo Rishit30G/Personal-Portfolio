@@ -219,9 +219,7 @@ section .title::after{
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
 }
-.about .title::after{
-    content: "Who I am";
-}
+
 .about .about-content .left{
    width: 45%;
 }
@@ -281,10 +279,7 @@ section .title::after{
  .services .title::before{
     background: white;
 }
- .services .title::after{
-     background: black;
-     content: "What I provide";
- }
+
  .services .serv-content .card{
      width: calc(33% - 20px);
      text-align:center;
