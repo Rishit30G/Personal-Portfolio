@@ -451,9 +451,6 @@ section .title::after{
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
     background-size: 2000px;
  }
- .contact .title::after{
-     content: "Get in touch";
- }
 
  .contact .contact-content .column{
      width: calc(50% - 30px);
