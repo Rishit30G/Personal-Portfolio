@@ -66,12 +66,12 @@ body{
 }
 
 .navbar .logo a span {
-    color: #23b410;
+    color: #09ff00;
     transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-    color: white;
+    color: rgb(245, 0, 0);
 }
 .navbar .menu ul{
     
@@ -116,15 +116,15 @@ body{
     left: 0; 
   }
 .navbar .menu li a:hover {
-    color: #23b410;
+    color: #30e917;
 }
 
 .navbar.sticky .menu li a:hover {
-    color: white;
+    color: rgb(226, 10, 10);
 }
 
 .menu-btn{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     cursor: pointer;
     display: none;
@@ -298,9 +298,20 @@ section .title::after{
  }
  .services .serv-content .card .box{
       transition: all 0.3s ease;
+      color: #09ff00;
  }
- .services .serv-content .card:hover .box{
-      transform: scale(1.05);
+ .services .serv-content .card .box.text{
+    transition: all 0.3s ease;
+    color: #09ff00;
+}
+.para{
+    color : white;
+}
+ .services .serv-content .card:hover.box{
+     transform: scale(1.05);
+}
+.services .serv-content .card:hover.box
+    transform: scale(1.05);
 }
  .services .serv-content .card i{
      font-size: 50px; 
@@ -377,6 +388,7 @@ section .title::after{
     transform: scale(1.20);
     border-radius: 10px;
  }
+
  #css-icon:hover{
     -webkit-filter: drop-shadow(0 0 10px #264de4);
     filter: drop-shadow(0 0 10px #264de4);
@@ -594,9 +606,9 @@ footer i:hover{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #124429;
+    background: #295c41;
     box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
-    color: #25e70c;
+    color: #26ff09;
     border: none;
     outline: none;
     cursor: pointer;
@@ -715,6 +727,7 @@ footer i:hover{
     
     .home .home-content .text-3 {
         font-size: 35px;
+
     }
     .max-width{
         max-width: 800px;
