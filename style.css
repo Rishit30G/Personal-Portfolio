@@ -307,11 +307,12 @@ section .title::after{
 .para{
     color : white;
 }
+
  .services .serv-content .card:hover.box{
      transform: scale(1.05);
 }
 .services .serv-content .card:hover.box
-    transform: scale(1.05);
+    transform : scale(1.05);
 }
  .services .serv-content .card i{
      font-size: 50px; 
@@ -336,6 +337,7 @@ section .title::after{
 
 .skills .title::after{
     content: "What I Know";
+    margin : 0px 0px ;
 }
 
 .skills .skills-content .column{
@@ -388,7 +390,20 @@ section .title::after{
     transform: scale(1.20);
     border-radius: 10px;
  }
-
+ .imgs{
+	border : 2px solid yellow;
+	margin : 2px;
+}
+.imgs:hover{
+    border : 2px solid rgb(9, 255, 0);
+}
+.imgsl{
+	border : 2px solid red;
+	margin : 2px;
+}
+.imgsl:hover{
+	border : 2px solid rgb(9, 255, 0);
+}
  #css-icon:hover{
     -webkit-filter: drop-shadow(0 0 10px #264de4);
     filter: drop-shadow(0 0 10px #264de4);
