@@ -5,7 +5,10 @@
 ![](https://img.shields.io/github/forks/Rishit30G/Personal-Portfolio?style=for-the-badge)     ![](https://img.shields.io/github/followers/Rishit30G?style=for-the-badge)  ![](https://img.shields.io/github/stars/Rishit30G/Personal-Portfolio?style=for-the-badge)
 
 ### Website Layout
-https://user-images.githubusercontent.com/74411873/135132982-12ba031e-4a07-4148-88f2-069af65ceea4.mp4
+
+
+https://user-images.githubusercontent.com/74411873/145658790-95f3c433-8a92-4339-b96c-77777e7d5842.mp4
+
 
 
 ### How to go about
