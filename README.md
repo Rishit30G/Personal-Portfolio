@@ -80,6 +80,8 @@ This is the basic layout of the website where things need to be replaced with yo
 </a>
 
 #### Website Link: https://rishit30g.github.io/Personal-Portfolio/
+<br>
 
-### Got the swags as a Maintainer 🥳 (22nd March'22) 
+## Got the swags as a Maintainer 🥳 (22nd March'22) 
+Thank you to everyone who contributed and made this possible! (My First Hacktober 🥇)
 ![Hacktoberfest_21](https://user-images.githubusercontent.com/74411873/159472519-09989d72-278f-493b-9a01-4e484440e79e.jpg)
