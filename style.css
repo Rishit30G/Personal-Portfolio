@@ -527,12 +527,15 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    background: none;
+    background: #031813b8;
     font-family: 'Poppins', sans-serif;
 }
 .contact .right form .textarea textarea{
      padding-top: 10px;
      resize: none;
+}
+.contact .right form .field input::placeholder,.contact .right form .textarea textarea::placeholder {
+    color: #999;
 }
 .contact .right form .button{
     height: 47px;
