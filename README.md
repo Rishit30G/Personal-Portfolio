@@ -9,6 +9,13 @@
 
 https://user-images.githubusercontent.com/74411873/145658790-95f3c433-8a92-4339-b96c-77777e7d5842.mp4
 
+# Before and after changes :-
+
+## Before :-
+![s1](https://github.com/Arshdeep-13/Personal-Portfolio/assets/108752646/83814257-3feb-4e38-bb65-347184920c48)
+## After :-
+## ![s](https://github.com/Arshdeep-13/Personal-Portfolio/assets/108752646/270d849b-7a42-4aca-b5a2-3f0f2039c77c)
+
 
 
 ### How to go about

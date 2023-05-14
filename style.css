@@ -10,6 +10,33 @@ html{
    scroll-behavior:smooth;
 }
 
+.glow {
+    font-size: 64px;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    text-shadow: 0 0 10px #4CAF50;
+    animation: glowing 2s ease-in-out infinite;
+}
+.glow-text {
+    font-size: 20px;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    text-shadow: 0 0 10px #4CAF50;
+    animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50, 0 0 50px #4CAF50, 0 0 60px #4CAF50, 0 0 70px #4CAF50, 0 0 80px #4CAF50;
+    }
+    50% {
+        text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50, 0 0 50px #4CAF50, 0 0 60px #4CAF50, 0 0 70px #4CAF50, 0 0 120px #4CAF50;
+    }
+    100% {
+        text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50, 0 0 50px #4CAF50, 0 0 60px #4CAF50, 0 0 70px #4CAF50, 0 0 80px #4CAF50;
+    }
+}
+
 body{
     background: url("images/leaves_bushes_green_174515_3840x2400.jpg") no-repeat center;
     background-size: cover;
@@ -66,7 +93,7 @@ body{
 }
 
 .navbar .logo a span {
-    color: #23b410;
+    color: white;
     transition: all 0.3s ease;
 }
 
@@ -186,7 +213,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    color: #23b410;
+    color: white;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 80px;
@@ -256,7 +283,7 @@ section .title::after{
  .about .about-content .right a{
     display: inline-block;
     background: none;
-    color: #23b410;
+    color: #88fe78;
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -347,7 +374,7 @@ section .title::after{
  .skills .skills-content .left a{
     display: inline-block;
     background: none;
-    color: #23b410;
+    color: #75fe63;
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -503,6 +530,16 @@ section .title::after{
    height: 45px;
    width: 100%;
    margin-bottom: 15px;
+}
+
+div.field input::placeholder{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+div.field.textarea textarea#message{
+    color: white;
 }
 
 .contact .right form .textarea{
@@ -761,3 +798,4 @@ footer i:hover{
         font-size: 27px;
     }
 }
+
